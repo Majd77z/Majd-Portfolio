@@ -3,373 +3,408 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Majd Portfolio </title>
+    <title>Majd Alziyady | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <a href="#" class="logo"><span>Majd</span></a>
-    
-      <ul class="links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+      <a href="#home" class="logo">Majd</a>
+
+      <ul class="links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-    
-      <a href="#contact" class="btn">Contact Me</a>
+
+      <a href="#contact" class="btn nav-btn">Contact Me</a>
+      <i class='bx bx-menu' id="menu-icon"></i>
     </nav>
 
-    <section id="home">
-        <img src="/images/MajdES.jpeg" alt="" />
-
-        <div class="info-box">
-          <h1><span>Hi, I'm Majd Alziyady</span></h1>
-          <p>
-            Engineer by training. Athlete by mindset. Builder by passion.
-            </p>
-        </div>
-
-    </section><!-- /Home Section -->
-
-    <section id="about" class="about section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>About</h2>
-          <p>
-            I am an Associate Application Developer at IBM Consulting and a Computer Science
-            graduate from Al-Baha University with a GPA of 3.98. My work focuses on building
-            scalable enterprise solutions and intelligent systems that solve real-world problems.
-          </p>
-        
-          <p>
-            My technical interests include artificial intelligence, data-driven systems,
-            and cloud-based platforms. I developed an AI-powered research data management
-            platform using Retrieval-Augmented Generation (RAG) to automate research workflows
-            for faculty members.
-          </p>
-       </div><!-- End Section Title -->
-
-    </section> <!-- /about Section -->
-
-        <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-              <h2>Skills</h2>
-            </div><!-- End Section Title -->
-      
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-      
-              <div class="row skills-content skills-animation">
-      
-                <div class="col-lg-6">
-      
-                  <div class="progress">
-                    <span class="skill"><span>Programming & Development: Python, Java, and C++</span> <i class="val">90%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-      
-                  <div class="progress">
-                    <span class="skill"><span>ServiceNow Development: Business Rules, Script Includes, Flow Designer</span> <i class="val">85%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-
-                  <div class="progress">
-                    <span class="skill"><span>Data Science & AI: Skilled in machine learning,  data visualization</span> <i class="val">75%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-      
-                  <div class="progress">
-                    <span class="skill"><span>Web Development: HTML, CSS, Javascript</span> <i class="val">75%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-      
-                </div>
-      
-                <div class="col-lg-6">
-      
-                  <div class="progress">
-                    <span class="skill"><span>Cloud & Tools: Google Cloud Platform, Git, GitHub </span> <i class="val">80%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-      
-                  <div class="progress">
-                    <span class="skill"><span>Databases: Firebase, MySQL</span> <i class="val">90%</i></span>
-                    <div class="progress-bar-wrap">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div><!-- End Skills Item -->
-      
-                </div>
-      
-              </div>
-      
-            </div>
-      
-    </section><!-- /Skills Section -->
-        
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Resume</h2>
-        </div><!-- End Section Title -->
-  
-        <div class="container">
-  
-          <div class="row">
-  
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="resume-item">
-                <h3>Experience</h3>
-                <h5>Associate Application Developer</h5>
-                <h5>Nov 2025 – Present</h5>
-                <p><em>IBM Consulting</em></p>
-              
-                <ul>
-                  <li>Develop ServiceNow applications using JavaScript, Business Rules, Script Includes, and Flow Designer.</li>
-                  <li>Design enterprise workflows and service catalogs aligned with ITSM processes.</li>
-                  <li>Troubleshoot platform issues and optimize performance for enterprise environments.</li>
-                  <li>Collaborate with cross-functional teams to deliver scalable business solutions.</li>
-                </ul>
-              </div>
-
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Bachelor of Computer Science </h4>
-                <h5>2021 - 2025</h5>
-                <p><em>Al-Baha University</em></p>
-                <p> Graduated with first-class honors (GPA: 3.98/4.00)</p>
-              </div>
-  
-              <div class="resume-item pb-0">
-                <h4>CERTIFICATIONS</h4>
-                <ul>
-                  <li>Academy for Women Entrepreneurs (AWE) Program- U.S. Embassy & Arizona State University, February 2025</li>
-                  <li>Foundational Consulting Skills- Mustashar Accelerator, Novmber 2024</li>
-                  <li>Machine Learning Bootcamp- Saudi Data and Artificial Intelligence Authority (SDAIA), March 2024</li>
-                  <li>AI for Business Nanodegree- Udacity, April 2021</li> 
-                </ul>
-              </div><!-- End Resume Item -->
-  
-              <h3 class="resume-title">HONORS & AWARDS</h3>
-              <div class="resume-item">
-                <ul>
-                  <li>Saudi Cultural Exchange Representative, China, 2024</li>
-                  <li>McKinsey & Company’s Qimam Fellowship Award, 2024</li>
-                  <li>2nd Place– Saudi 4IR Applications Hackathon, 2024</li>
-                  <li>3rd Place– SADAIA Al-Baha Hackathon, 2024</li>
-                  <li>Youth Leaders Recognition –Asser Authority, 2023</li> 
-                  <li>Finalist – Saudi Competitive Programming Competition, 2022</li> 
-                </ul>
-              </div><!-- End Resume Item -->
-  
-  
-  
-            </div>
-  
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="resume-title">Organizations</h3>
-              <div class="resume-item">
-                <h4>Stockroom Guiding Startup</h4>
-                <h5>2023 - Present</h5>
-                <p><em>Co- Founder </em></p>
-                <ul>
-                  <li>Developed and launched a functional product prototype, ensuring efficient execution and user adoption</li>
-                  <li>Led MVP development, prioritizing user-centric features for a smooth deployment </li>
-                </ul>
-              </div><!-- Edn Resume Item -->
-  
-              <div class="resume-item">
-                <h4>Google Developer Student Clubs (GDSC), Al-Baha University </h4>
-                <h5>2023 - 2024</h5>
-                <p><em>Club Lead</em></p>
-                <ul>
-                  <li>Restructured the club, increasing active membership by 40% through strategic initiatives and technical training programs</li>
-                  <li>Led the organization of major events like DevFest, engaging 150+ participants and industry experts</li>
-                </ul>
-              
-  
-              </div><!-- End Resume Item -->
-  
-            </div>
-  
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="home">
+      <div class="home-content">
+        <div class="image-content">
+          <div class="img-wrapper">
+            <img src="/images/MajdES.jpeg" alt="Majd Alziyady" />
           </div>
-  
         </div>
-  
-    </section><!-- /Resume Section -->  
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-100">
-        <div class="container mx-auto text-center">
-             <h2 class="text-3xl font-semibold mb-8">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project 1: AI-Powered Research Data Platform -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
-                    <img src="images/Litrix/FYP.png" alt="AI-Powered Research Data Platform" class="w-16 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">AI-Powered Research Data Platform</h3>
-                    <p class="text-gray-600 mb-4">AI-powered platform that automates research data collection and reporting for faculty members. 
-                      Uses Retrieval-Augmented Generation (RAG) to enhance publication tracking and data retrieval.
-                      </p>
-                    <div class="flex flex-wrap justify-center">
-                        <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full m-1">React.js</span>
-                        <span class="bg-green-100 text-green-600 text-xs font-medium px-3 py-1 rounded-full m-1">Tailwind CSS</span>
-                        <span class="bg-yellow-100 text-yellow-600 text-xs font-medium px-3 py-1 rounded-full m-1">Firebase</span>
-                        <span class="bg-indigo-100 text-indigo-600 text-xs font-medium px-3 py-1 rounded-full m-1">OpenAI API</span>
-                    </div>
-                </div>
-                
-                <!-- Project 2: ‘Ma’ak’ – Smart Transportation App -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
-                    <img src="images/معاك.png" alt="‘Ma’ak’ – Smart Transportation App" class="w-16 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">‘Ma’ak’ – Smart Transportation App</h3>
-                    <p class="text-gray-600 mb-4">An Android app designed to aid visually impaired users with voice commands, real-time navigation, and smart object recognition for safer urban mobility.</p>
-                    <div class="flex flex-wrap justify-center">
-                        <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full m-1">Android Studio</span>
-                        <span class="bg-green-100 text-green-600 text-xs font-medium px-3 py-1 rounded-full m-1">Firebase</span>
-                        <span class="bg-yellow-100 text-yellow-600 text-xs font-medium px-3 py-1 rounded-full m-1">CNN</span>
-                    </div>
-                </div>
-                                <!-- Project 3: ‘Ma’ak’ – Smart Transportation App -->
-                                <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
-                                  <img src="images/bani-hassan.svg" alt="Bani Hassan Tourism Digital Platform" class="w-16 mx-auto mb-4">
-                                  <h3 class="text-xl font-semibold mb-2">Bani Hassan Tourism Digital Platform</h3>
-                                  <p class="text-gray-600 mb-4">    A regional tourism platform developed for the Al-Baha Municipality to promote the cultural and
-                                    natural landmarks of the Bani Hassan region. The platform highlights key attractions, integrates
-                                    an interactive map, and encourages local tourism engagement.</p>
-                                  <div class="flex flex-wrap justify-center">
-                                      <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full m-1">React.js</span>
-                                      <span class="bg-green-100 text-green-600 text-xs font-medium px-3 py-1 rounded-full m-1">Firebase</span>
-                                      <span class="bg-yellow-100 text-yellow-600 text-xs font-medium px-3 py-1 rounded-full m-1">Tailwind CSS</span>
-                                      <span class="bg-yellow-100 text-yellow-600 text-xs font-medium px-3 py-1 rounded-full m-1">Google Cloud Platform</span>
-                                  </div>
-                              </div>
-                <!-- Project 4: STRG – Smart Storage Prototype -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
-                    <img src="images/STRG/1/Navy-blue-.png" alt="STRG – Smart Storage Prototype" class="w-16 mx-auto mb-4">
-                    <h3 class="text-xl font-semibold mb-2">STRG – Smart Storage Prototype</h3>
-                    <p class="text-gray-600 mb-4">A functional prototype using weight sensors and LED indicators to help users locate stored items quickly in shared spaces.</p>
-                    <div class="flex flex-wrap justify-center">
-                        <span class="bg-blue-100 text-blue-600 text-xs font-medium px-3 py-1 rounded-full m-1">Arduino Uno</span>
-                        <span class="bg-green-100 text-green-600 text-xs font-medium px-3 py-1 rounded-full m-1">C/C++</span>
-                        <span class="bg-yellow-100 text-yellow-600 text-xs font-medium px-3 py-1 rounded-full m-1">LED Matrix</span>
-                    </div>
-                </div>
-                
-            </div>
+        <div class="text-content">
+          <p class="greeting">Hello, I'm</p>
+          <h1>Majd <span class="gradient-text">Alziyady</span></h1>
+          <h3 class="typing-wrapper">
+            <span class="typing-text"></span><span class="cursor">|</span>
+          </h3>
+          <p class="tagline">Engineer by training. Athlete by mindset. Builder by passion.</p>
+          <div class="home-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="mailto:majdalziyady@gmail.com" title="Email"><i class='bx bx-envelope'></i></a>
+          </div>
         </div>
+      </div>
+      <a href="#about" class="scroll-down">
+        <i class='bx bx-chevron-down'></i>
+      </a>
     </section>
-    
-    <!-- Contact Section -->
-    <section>
 
-    </section> 
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-        </div><!-- End Section Title -->
-  
-        <div class="container" data-aos="fade" data-aos-delay="100">
-  
-          <div class="row gy-4">
-  
-            <div class="col-lg-4">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Al Baha, Saudi Arabia </p>
-                </div>
-              </div><!-- End Info Item -->
-  
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Phone Number</h3>
-                  <p>+966 533 411 372</p>
-                </div>
-              </div><!-- End Info Item -->
-  
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>majdalziyady@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-  
-            </div>
-  
-            <div class="col-lg-8">
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="row gy-4">
-  
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-  
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-  
-                  <div class="col-md-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-  
-                  <div class="col-md-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-  
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-  
-                    <button type="submit">Send Message</button>
-                  </div>
-  
-                </div>
-              </form>
-            </div><!-- End Contact Form -->
-  
-          </div>
-  
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section reveal">
+      <div class="section-title">
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <i class='bx bx-code-alt about-icon'></i>
+          <h4>Developer</h4>
+          <p>Building scalable enterprise solutions at IBM Consulting using ServiceNow and modern web technologies.</p>
         </div>
-  
-      </section><!-- /Contact Section -->
-  
-     
-    
+        <div class="about-card">
+          <i class='bx bx-brain about-icon'></i>
+          <h4>AI Enthusiast</h4>
+          <p>Passionate about AI, RAG systems, and data-driven platforms that solve real-world problems.</p>
+        </div>
+        <div class="about-card">
+          <i class='bx bx-trophy about-icon'></i>
+          <h4>Achiever</h4>
+          <p>Qimam Fellow, Hackathon winner, and Computer Science graduate with a 3.98 GPA from Al-Baha University.</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p>
+          I am an <strong>Associate Application Developer at IBM Consulting</strong> and a Computer Science
+          graduate from Al-Baha University with a GPA of 3.98. My work focuses on building
+          scalable enterprise solutions and intelligent systems that solve real-world problems.
+        </p>
+        <p>
+          My technical interests include <strong>artificial intelligence</strong>, data-driven systems,
+          and cloud-based platforms. I developed an AI-powered research data management
+          platform using Retrieval-Augmented Generation (RAG) to automate research workflows
+          for faculty members.
+        </p>
+      </div>
+    </section>
 
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills section reveal">
+      <div class="section-title">
+        <h2>My <span class="gradient-text">Skills</span></h2>
+        <div class="title-line"></div>
+      </div>
 
+      <div class="skills-container">
+        <div class="skills-col skills-animation">
+
+          <div class="progress">
+            <span class="skill">
+              <span>Programming & Development: Python, Java, C++</span>
+              <i class="val">90%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>ServiceNow: Business Rules, Script Includes, Flow Designer</span>
+              <i class="val">85%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>Data Science & AI: Machine Learning, Data Visualization</span>
+              <i class="val">75%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>Web Development: HTML, CSS, JavaScript</span>
+              <i class="val">75%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>Cloud & Tools: Google Cloud Platform, Git, GitHub</span>
+              <i class="val">80%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">
+              <span>Databases: Firebase, MySQL</span>
+              <i class="val">90%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESUME SECTION ===== -->
+    <section id="resume" class="resume section reveal">
+      <div class="section-title">
+        <h2>My <span class="gradient-text">Resume</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="resume-grid">
+
+        <!-- Left Column -->
+        <div class="resume-col">
+
+          <div class="resume-group">
+            <h3 class="resume-title"><i class='bx bx-briefcase'></i> Experience</h3>
+            <div class="resume-item">
+              <h4>Associate Application Developer</h4>
+              <span class="resume-badge">Nov 2025 – Present</span>
+              <p class="resume-company"><em>IBM Consulting</em></p>
+              <ul>
+                <li>Develop ServiceNow applications using JavaScript, Business Rules, Script Includes, and Flow Designer.</li>
+                <li>Design enterprise workflows and service catalogs aligned with ITSM processes.</li>
+                <li>Troubleshoot platform issues and optimize performance for enterprise environments.</li>
+                <li>Collaborate with cross-functional teams to deliver scalable business solutions.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-group">
+            <h3 class="resume-title"><i class='bx bx-graduation'></i> Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Science</h4>
+              <span class="resume-badge">2021 – 2025</span>
+              <p class="resume-company"><em>Al-Baha University</em></p>
+              <p>Graduated with first-class honors (GPA: 3.98/4.00)</p>
+            </div>
+          </div>
+
+          <div class="resume-group">
+            <h3 class="resume-title"><i class='bx bx-certification'></i> Certifications</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Academy for Women Entrepreneurs (AWE) – U.S. Embassy & Arizona State University, Feb 2025</li>
+                <li>Foundational Consulting Skills – Mustashar Accelerator, Nov 2024</li>
+                <li>Machine Learning Bootcamp – SDAIA, March 2024</li>
+                <li>AI for Business Nanodegree – Udacity, April 2021</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-group">
+            <h3 class="resume-title"><i class='bx bx-medal'></i> Honors & Awards</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Saudi Cultural Exchange Representative, China, 2024</li>
+                <li>McKinsey & Company's Qimam Fellowship Award, 2024</li>
+                <li>2nd Place – Saudi 4IR Applications Hackathon, 2024</li>
+                <li>3rd Place – SADAIA Al-Baha Hackathon, 2024</li>
+                <li>Youth Leaders Recognition – Asser Authority, 2023</li>
+                <li>Finalist – Saudi Competitive Programming Competition, 2022</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="resume-col">
+
+          <div class="resume-group">
+            <h3 class="resume-title"><i class='bx bx-buildings'></i> Organizations</h3>
+            <div class="resume-item">
+              <h4>Stockroom Guiding Startup</h4>
+              <span class="resume-badge">2023 – Present</span>
+              <p class="resume-company"><em>Co-Founder</em></p>
+              <ul>
+                <li>Developed and launched a functional product prototype, ensuring efficient execution and user adoption.</li>
+                <li>Led MVP development, prioritizing user-centric features for a smooth deployment.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Google Developer Student Clubs (GDSC), Al-Baha University</h4>
+              <span class="resume-badge">2023 – 2024</span>
+              <p class="resume-company"><em>Club Lead</em></p>
+              <ul>
+                <li>Restructured the club, increasing active membership by 40% through strategic initiatives and technical training programs.</li>
+                <li>Led the organization of major events like DevFest, engaging 150+ participants and industry experts.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects section reveal">
+      <div class="section-title">
+        <h2>My <span class="gradient-text">Projects</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="images/Litrix/FYP.png" alt="AI-Powered Research Data Platform" />
+          </div>
+          <div class="project-body">
+            <h3>AI-Powered Research Data Platform</h3>
+            <p>AI-powered platform that automates research data collection and reporting for faculty members using Retrieval-Augmented Generation (RAG) to enhance publication tracking.</p>
+            <div class="tech-tags">
+              <span class="tag tag-blue">React.js</span>
+              <span class="tag tag-green">Tailwind CSS</span>
+              <span class="tag tag-yellow">Firebase</span>
+              <span class="tag tag-indigo">OpenAI API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="images/معاك.png" alt="Ma'ak Smart Transportation App" />
+          </div>
+          <div class="project-body">
+            <h3>'Ma'ak' – Smart Transportation App</h3>
+            <p>An Android app designed to aid visually impaired users with voice commands, real-time navigation, and smart object recognition for safer urban mobility.</p>
+            <div class="tech-tags">
+              <span class="tag tag-blue">Android Studio</span>
+              <span class="tag tag-green">Firebase</span>
+              <span class="tag tag-yellow">CNN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="images/bani-hassan.svg" alt="Bani Hassan Tourism Digital Platform" />
+          </div>
+          <div class="project-body">
+            <h3>Bani Hassan Tourism Digital Platform</h3>
+            <p>A regional tourism platform for Al-Baha Municipality promoting cultural and natural landmarks of the Bani Hassan region with an interactive map.</p>
+            <div class="tech-tags">
+              <span class="tag tag-blue">React.js</span>
+              <span class="tag tag-green">Firebase</span>
+              <span class="tag tag-yellow">Tailwind CSS</span>
+              <span class="tag tag-indigo">Google Cloud</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="images/STRG/1/Navy-blue-.png" alt="STRG Smart Storage Prototype" />
+          </div>
+          <div class="project-body">
+            <h3>STRG – Smart Storage Prototype</h3>
+            <p>A functional prototype using weight sensors and LED indicators to help users locate stored items quickly in shared spaces.</p>
+            <div class="tech-tags">
+              <span class="tag tag-blue">Arduino Uno</span>
+              <span class="tag tag-green">C/C++</span>
+              <span class="tag tag-yellow">LED Matrix</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact section reveal">
+      <div class="section-title">
+        <h2>Get In <span class="gradient-text">Touch</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="info-icon"><i class='bx bx-map'></i></div>
+            <div>
+              <h3>Address</h3>
+              <p>Al Baha, Saudi Arabia</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class='bx bx-phone'></i></div>
+            <div>
+              <h3>Phone</h3>
+              <p>+966 533 411 372</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class='bx bx-envelope'></i></div>
+            <div>
+              <h3>Email</h3>
+              <p>majdalziyady@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+              <span class="form-line"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" required />
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+            <span class="form-line"></span>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span>Send Message</span>
+            <i class='bx bx-send'></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2025 <span class="gradient-text">Majd Alziyady</span>. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
