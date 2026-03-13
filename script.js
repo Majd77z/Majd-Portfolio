@@ -136,27 +136,38 @@ if (typingEl) {
 /* ===================================================
    CONTACT FORM – Basic feedback
 =================================================== */
-const contactForm = document.getElementById('contact-form');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+const form = document.querySelector('.php-email-form');
+if (form) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
-
-    const btn = contactForm.querySelector('.submit-btn span');
-    const originalText = btn.textContent;
-
+    const btn = form.querySelector('button[type="submit"]');
     btn.textContent = 'Sending...';
-    contactForm.querySelector('.submit-btn').disabled = true;
+    btn.disabled = true;
 
-    // Simulate send (replace with real backend/EmailJS)
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        btn.textContent = 'Message Sent!';
+        form.reset();
+      } else {
+        btn.textContent = 'Failed. Try again.';
+        btn.disabled = false;
+      }
+    } catch (error) {
+      btn.textContent = 'Error. Try again.';
+      btn.disabled = false;
+    }
+
     setTimeout(() => {
-      btn.textContent = '✓ Message Sent!';
-      contactForm.reset();
-
-      setTimeout(() => {
-        btn.textContent = originalText;
-        contactForm.querySelector('.submit-btn').disabled = false;
-      }, 3000);
-    }, 1500);
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+    }, 4000);
   });
 }

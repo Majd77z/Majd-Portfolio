@@ -373,7 +373,8 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contact-form">
+        <form  action="https://formspree.io/f/mqeylboa"
+        method="POST"class="php-email-form" class="contact-form" id="contact-form">
           <div class="form-row">
             <div class="form-group">
               <input type="text" name="name" placeholder="Your Name" required />
@@ -392,6 +393,7 @@
             <textarea name="message" rows="6" placeholder="Message" required></textarea>
             <span class="form-line"></span>
           </div>
+          <input type="hidden" name="_next" value="https://majd77z.github.io/Majd-Portfolio/?sent=true">
           <button type="submit" class="btn btn-primary submit-btn">
             <span>Send Message</span>
             <i class='bx bx-send'></i>
